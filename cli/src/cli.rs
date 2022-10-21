@@ -79,6 +79,16 @@ pub struct ValidationWorkerCommand {
 	pub socket_path: String,
 }
 
+
+#[allow(missing_docs)]
+#[derive(Debug, Parser)]
+pub struct ValidationsWorkerCommand {
+	///
+	pub socket_path: String,
+	///
+	pub force_kusama: bool,
+}
+
 #[allow(missing_docs)]
 #[derive(Debug, Parser)]
 pub struct RunCmd {
