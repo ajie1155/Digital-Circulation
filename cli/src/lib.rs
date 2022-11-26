@@ -38,6 +38,9 @@ pub use service::overseer::prepared_overseer_builder;
 #[cfg(feature = "cli")]
 pub use cli::*;
 
+#[cfg(feature = "error")]
+pub use error::*;
+
 #[cfg(feature = "cli")]
 pub use command::*;
 
