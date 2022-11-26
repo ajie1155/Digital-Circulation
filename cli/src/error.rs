@@ -29,6 +29,9 @@ pub enum Error {
 	SubstrateTracing(#[from] sc_tracing::logging::Error),
 
 	#[error(transparent)]
+	SubstrateTracing(#[from] sc_tracing::Error),
+
+	#[error(transparent)]
 	PerfCheck(#[from] digital_circulation_performance_test::PerfCheckError),
 
 	#[cfg(not(feature = "pyroscope"))]
